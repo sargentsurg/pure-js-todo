@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Todo List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Todo list code goes here -->
+    <div class="container">
+       <header>
+       	<img src="img/logo.png" alt="">
+       </header>
+       <main>
+       	<div class="col">
+       		<form action="#" class="greyGradient">
+       		    <div class="labelContainer">
+       		        <label for="addItemField">Add Item:</label>
+       		        <label for="jsonField">JSON:</label>
+       		    </div>
+       		    <fieldset>
+           			<input type="text" name="addItemField" id="addItemField">
+           			<button id="addItemBtn">Add</button>
+       			</fieldset>
+       			<fieldset>
+       			    <textarea name="jsonField" id="jsonField"></textarea>
+       			    <button id="loadJsonBtn">Load JSON</button>
+       			</fieldset>
+       		</form>
+       	</div>
+       	<div class="col">
+       	    <div class="itemList">
+           	    <h2>Items</h2>
+           		 <table id="tableList">
+           		     <tbody>
+           		     </tbody>
+           		 </table>
+       		</div>
+       	</div>
+       	<div class="clearFix"></div>
+       </main>
+       </div>
+
+
+        <script src="js/main.js"></script>
+    </body>
+</html>
